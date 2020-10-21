@@ -1,0 +1,110 @@
+<! DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"> <!--Pour integrer les accents-->
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.google.com/specimen/Crete+Round?query=crete" rel="stylesheet"> <!-- lien vers des polices google. Ensuite je peux l'utiliser dans mon fichier css.-->
+        <title> Travel Agency </title>
+    </head>
+    
+    <body>
+        <header> <!-- Donc mon header est constitue du logo et du menu de naviguation.-->
+            <div class="wrapper"> 
+                <h1> 
+                    Travel Agency<span class="orange">.</span> <!-- j'utilise le span pour donner un style particulier a mon point, en n'oubliant pas de mettre une classe parce que le point revient dans le footer sur le logo. et la classe permet de donner un style sur mon file css a plusieurs elements.-->
+                </h1> 
+        
+                <nav> <!--le tag nav est le tag utilise comme menu de navigation-->
+                    <ul>
+                        <li> <a href="#main-image">Accueil </a>     </li>
+                        <li> <a href="#steps">Destinations </a>     </li>
+                        <li> <a href="#possibilities"> Circuits</a> </li>
+                        <li> <a href="#contact"> Contact</a>        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        
+        <section id="main-image"> <!-- l'image principale avec le camping car. Chaque section a une div-->
+            <div class="wrapper">
+                <h2> Organisez votre <br><strong>voyage sur mesure</strong></h2>
+                <a href="#" class="button-1">Par ici</a>
+            </div> 
+        </section> 
+        
+        
+        <section id="steps"> <!-- les etapes pour partir en voyage via notre site-->
+            
+            <div class="wrapper"> 
+                <ul>
+                    <li id="step-1">
+                        <h4>Planifier</h4>
+                        <p> Confiez-nous vos rêves d'évasion : en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.</p>
+                    </li>
+                    <li id="step-2">
+                        <h4>Organiser</h4>
+                        <p> Bénéficiez de l'expertise de nos spécialistes de chaque destination, ils vous accompagnent dans la réalisation de votre voyage.</p>
+                    </li>
+                    <li id="step-3">
+                        <h4>Voyager</h4>
+                        <p> Nous nous chargeons d'assurer votre sécurité et de veiller à votre pleine sérénité tout au long de votre voyage.</p>
+                    </li>
+                    <div class="clear"> </div> <!--Pour donner de l'espace entre notre section steps et la section "possb"-->
+                </ul>
+            </div>
+        
+        </section> 
+        
+        
+        <section id="possibilities">  <!-- les possibilites offertes pour partir en voyage-->
+            <div class="wrapper">
+            
+                <article style="background-image: url(images/article-image-1.jpg)"> <!--Chaque partie de notre section "possibilities", gauche et droite est un article-->
+                    <div class="overlay"> <!--cette div avec class overlay permet d'ajouter notre partie gauche et blanche de nos articles.-->
+                        <h4> Partez en famille</h4>
+                        <p> <small> Offrez le meilleur à ceux que vous aimez et partagez des moments fabuleux !</small></p> <!--le tag small permet de rendre notre paragr petit compare a celui de la partie steps.-->
+                        <a href="#" class="button-2"> Plus d'infos </a>
+                    </div>
+                </article>
+                
+                <article style="background-image: url(images/article-image-2.jpg)"> <!--Chaque partie de notre section "possibilities", gauche et droite est un article-->
+                    <div class="overlay">
+                        <h4> Envie de s'evader</h4>
+                        <p> <small> Parfois un peu d'évasion serait le bienvenue et ferait le plus grand bien !</small></p> <!--le tag small permet de rendre notre paragr petit compare a celui de la partie steps.-->
+                        <a href="#" class="button-2"> Plus d'infos </a>
+                    </div>
+                </article>
+                
+                <div class="clear"> </div>
+                
+            </div>  
+        </section>
+        
+        
+        <section id="contact"> <!-- Laisser votre email et votre nom pour que nous vous contactions pour discuter-->
+            <div class="wrapper">
+                <h3> Contactez-nous</h3> <!-- On peut utiliser now notre h3 parce qu'il est plus gros que "Envie de s'evader"-->
+                <p> Chez Travel Agency nous savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+            
+                <form>
+                    <label for="name"> Nom</label> <!-- Il faut preciser ce que je veux labeliser. D'ou le for:"id"-->
+                    <input type="text" id="name" placeholder="Votre nom"> <!-- On precise le type d'input, l'id identique au label, et le texte indicatif dans le champ input (le placeholder)-->
+                    
+                    <label for="email"> Email</label>
+                    <input type="email" placeholder="Votre email">
+                    
+                    <input type="submit" value="OK" class="button-3"> <!--On ajoute notre button, en lui precisant une class afin de pouvoir le customiser sur notre file css-->
+                </form>
+            </div>
+        </section> 
+        
+        
+        <footer>
+            <h1> Travel agency<span class="orange">.</span></h1>
+            <div class="copyright"> Copyright © Tous droits réservés.</div> <!--on cree une div pour notre copyright. avec une class pour la styler sur css.-->
+        </footer>
+    </body>
+
+</html>

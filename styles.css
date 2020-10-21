@@ -1,0 +1,372 @@
+/* GENERAL */ /* Ici je mets les elments de style qui seront generaux*/
+
+
+
+*
+{  margin: 0;
+   padding: 0;
+}
+
+h1,h2,h3,h4
+{
+    color: #444;
+}
+
+h1
+{
+  font-family: "crete Round", serif;
+  font-size: 45px;
+  /*color: #444;*/   
+}
+
+h2
+{
+    /*color: #444;*/ 
+    font-size: 55px;
+    
+}
+
+h3
+{
+    font-size: 30px;
+    /*color: #444;*/ 
+}
+
+h4
+{
+ font-size: 24px;
+ /*color: #444;*/  
+}
+
+p
+{
+ line-height: 20px;
+ color: #777;
+}
+
+.wrapper
+{
+  width: 1000px; /*1350la largeur du conteneur invisible*/
+  margin: 0 auto; /* marge de 0 en haut et en bas. et auto pour dire centrer les elements.*/
+  padding: 0 10px; /*Le contenu ne sera pas colle au bord du wrapper. On va l'espacer un peu gauche et droite avec 10px*/
+    
+}
+
+
+.orange /* Je donne une couleur orange a notre point du logo. Le selecteur pour une classe commence par le "point" */
+{
+    color: #ff7100;
+}
+
+.clear
+{
+    clear: both; /* notre div qui separe la section steps de la section "possibilities" suivante.*/
+}
+
+small /* On le met ici parce que le small est un element general*/
+{
+    font-size: 13px;
+    font-style: italic;
+    
+}
+
+body
+{
+    
+   font-family: Arial, sans-serif;
+   font-size: 15px;
+}
+
+
+ul /* Je le mets dans la partie "general" parce qu'on veut que nos listes n'aient pas de bullets points sur tout le doc*/
+
+{
+    list-style: none; /* Pour ne pas attribuer de bullet point*/
+    
+}
+
+a 
+{
+ text-decoration: none; /* Je veux enlver les decorations par defaut. Notamment le trait...*/
+ color: #444
+    
+}
+
+
+/* HEADER *//* ici je mets les elements de style qui concerne le header*/
+
+
+header /* Je donne une taille au header.*/
+{
+    height:120px; /*120px*/
+    margin-top: 32px; /*32px*/
+}
+
+
+header h1
+{
+    float: left;
+    
+}
+
+
+header nav /* ceci est le tag de la navigation qui est sous le header*/
+{
+    float: right;
+    margin-top: 30px;
+}
+
+header nav ul li /* Je veux attribuer un style aux elements du menu qui sont contenus dans le header, le nav le ul et le li*/
+{
+    float: left; /* cela permet de faire flotter nos elements dans chacun de ses conteneurs a partie de la gauche*/
+    display: inline-block;
+}
+
+header nav ul li a
+{
+    text-transform: uppercase;
+    font-weight: bold; /* On l'ajoute dans la partie header parce que cette partie doit etre en gras*/
+    margin-right: 20px; /*Ceci permet de gerer les ecarts d'espacement de gauche vers la droite.*/
+}
+
+
+/* MAIN IMAGE */
+#main-image
+{
+  height: 580px;
+  background:url(images/main.jpg) center; /* la propriete background n'est pas seulement pour des couleurs mais aussi pour des url images */
+}
+
+#main-image h2
+{
+   font-weight: normal; /*Pour emlever le gras qui est la par defaut a cause du h2*/
+   text-transform: uppercase; /*transformer notre h2 text en majuscule*/
+   text-align: center; /* centrer notre text h2*/
+   padding: 150px 0 40px 0;
+   margin: 20px; /*mesure d'origine est de 20px*/
+}
+
+.button-1
+{
+    display: block; /* Si on veut que le width et le height marche*/
+    width: 120px;
+    height: 50px;
+    background: #ff7100;
+    color: #fff; /* ou #ffffff*/
+    font-size: 20px;
+    margin: 0 auto; /* Pour centrer notre button. Il n y aura pas de marge en haut et en bas et le systeme va donner une meme marge a gauche t a droite*/
+    line-height: 50px; /* Permet de fixer la position du texte dans le sens de la hauteur par rapport au button.*/
+    text-align: center; /*Pour positioner le text dans le button.*/
+    border-radius: 3px;  /*Pour arrondir les bordures du button.*/ 
+}
+
+.button-1:hover
+{
+    background: #02b8dd;
+}
+
+/* STEPS */
+
+#steps ul
+{
+    margin: 80px 50px; /*80px 0px*/
+   
+}
+
+
+#steps h4
+{
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Car notre paragraphe est colle au h4.*/
+}
+#steps ul li
+{
+   width: 300px; /*On va donner une largeur pour qu'ils soient comme dans une boite.*/ 
+   float: left; 
+   padding-top: 140px;
+   text-align: center;
+}
+
+
+#steps p
+{
+    margin-bottom: 20px;
+}
+
+#step-1
+{
+    background: url(images/steps-icon-1.png) no-repeat top center; /*on ajoute notre image et on precise "no repeat" pour que ca ne s'affiche pas sur tous les elements de la liste en icone, puis on precise qu'on veut que ce soit en haut, et au centre par rapport a notre texte.*/
+    
+}
+
+#step-2
+{
+    
+    background: url(images/steps-icon-2.png) no-repeat top center;
+}
+
+#step-3
+{
+    background: url(images/steps-icon-3.png) no-repeat top center;
+    
+}
+
+/* POSSIBILITIES*/
+
+#possibilities
+{
+    background-color: #efefef; /* la couleur de fond de notre section possibilities*/
+    padding: 60px 185px; /*60px 0px*/
+}
+
+#possibilities article
+{
+    width: 460px; /*la largeur de nos 2 parties article*/
+    height:270px; /* la hauteur de nos 2 parties article*/
+    float: left; /*faire floter de la droite vers la gauche cad aligner de la gauche vers la droite*/
+    border-radius: 10px; /*arrondir les bordures de nos article.*/
+    
+}
+
+#possibilities article:first-child /*On veut ajouter une propriete sur seulemt sr le 1er element.*/
+{
+    margin-right: 20px; /*On veut ajouter une marge a droite mais seulement sur notre 1er article.*/
+}
+
+.overlay /*On peut utiliser un selecteur unique avec la classe .overlay{} */
+{
+    background: rgba(255,255,255,0.95);/* la propriete background rgba pour donner le blanc et transparent*/
+    height: 100%; /*100%*/
+    width: 190px;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    box-sizing: border-box; /*pour reajuster mon overlay afin qu'il ne deborde pas et contiennent mon padding.*/
+}
+
+article h4 /* Un tag commence sans un "." ou un '#".Nous aurions pu utiliser aussi le selecteur "possibilities h4 {} " */
+{
+    border-bottom: 1px solid #ddd; /* cette ligne permet d'ajouter la pte bordure en dessous de notre h4*/
+    padding-bottom: 20px; /*pour espacer afin que notre h4 ne soit pas colle au texte p*/
+    text-transform: uppercase; /* Transformer notre texte h4 en majuscule*/
+    margin-bottom: 20px; /*il ya une marge entre le h4 et notre texte paragraphe*/
+    text-align: center; /*alignement de notre texte h4*/
+}
+
+#possibilities p /* On le met ici parce qu'on veut donner une propriete particuliere pour le small qui est sous possibilities. Notamment l'alignement du texte (le text align center) Sinon il apparaitra sur tous les small de notre code.*/
+{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.button-2
+{
+    color: #fff; /*On donne une couleur au texte qui sera a l'interieur de notre button.*/
+    background: #ff7a00; /*la couleur de fond de notre button.*/
+    padding: 6px 20px; /*l'espace orange qu'il y aura directement apres notre texte.*/
+    border-radius: 3px; /*Pour arrondir les bordures de notre button.*/
+   
+}
+
+.button2:hover /*les proprietes pour le passage du curseur sur le button-2.*/
+{
+    background:#02b8dd; /*la couleur background du button quand on passera le curseur sur le button.*/
+}
+
+
+
+/* CONTACT */
+
+
+#contact
+{
+    padding: 60px 0px; /*Pour mettre l'espace entre notre bordure et nos contenus*/
+    text-align: center; /* Je centre tous les elements de ma section contact.*/
+}
+
+#contact h3 /*Pour les proprietes de style liees a notre h3*/
+{
+   text-transform: uppercase; /*mettons notre titre en majuscule*/
+   margin: 0 auto 20px auto; /*en haut 0px, a droite "auto", en bas "20px", a gauche "auto".*/
+   width: 400px; /* la largeur de notre bordure. Nota mettre 400px ramene notre bordure vers la gauche. ON va donc use la margin pour le reajuster.*/
+   border-bottom: 1px solid #02b8dd; /*le 1px c'est la largeur de notre trait*/
+   padding-bottom: 20px; /*Pour mettre de l'espace en bas entre mon h3 et la bordure.*/
+}
+
+
+form
+{
+    margin: 60px 0 20px 0;
+}
+
+label
+{
+    font-weight: bold; /*Pour mettr en gras nos labels*/
+    font-size: 20px;
+    margin-right: 10px; /* une marge pour espacer notre label de son input vers la droite */
+    color: #777;
+}
+
+input[type="text"] /*pour donner un style a un input de type text. On fera pareil avec les autres types de input, mais en precisant leurs valeurs cad emai, ou submit.*/
+{
+    padding: 10px; /*Pour espacer mes textes dans l'input des bords.*/
+    font-size: 20px; 
+    margin-right: 20px; /*Pour ecarter notre input qui est colle au label email.*/
+    border: 2px solid #ddd; /*Pour designer les bordures du input.*/ 
+    border-radius: 3px;
+}
+
+input[type="email"]
+{
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+
+.button-3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 11px;
+    background-color: #02d8dd;
+    border-style: none; /*Pour enlever la bordure par defaut qui est venu avec notre button.*/
+}
+
+
+.button-3:hover
+{
+    
+    background-color: #444;
+}
+
+
+/* FOOTER*/
+
+footer
+{
+    height: 260px;
+    background-color: #444;
+    
+}
+
+footer h1
+{
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.copyright
+{
+    text-align: center;
+    font-weight: bold; /*pour mettre notre text en gras.*/
+    padding-top: 30px; /* On veut l'espacer du travel agency. Donc on va devoir le ramener vers le bas. */
+    color: #777;
+
+    
+}
